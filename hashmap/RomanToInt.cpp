@@ -14,7 +14,6 @@ int romanToInt(string roman) {
 
 //compile with "g++ -std=c++11 RomanToInt.cpp"
 int main() {
-    //ternary operators checking edge cases
     (romanToInt("MMMCMXCIX") == 3999) ? cout << "TEST #1 PASSED" << endl : cout << "TEST #1 FAILED" << endl;
     (romanToInt("I") == 1) ? cout << "TEST #2 PASSED" << endl : cout << "TEST #2 FAILED" << endl;
     (romanToInt("LVIII") == 58) ? cout << "TEST #3 PASSED" << endl : cout << "TEST #3 FAILED" << endl;
