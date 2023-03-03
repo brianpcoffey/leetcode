@@ -3,6 +3,8 @@
 
 using namespace std;
 
+//https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/
+
 bool ArithmeticProgression(vector<int>& arr) {
     sort(arr.begin(), arr.end());
     long long int pattern = arr[1] - arr[0], i = 2, n = arr.size();
