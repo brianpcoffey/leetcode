@@ -1,14 +1,26 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
+//Solution #1
+int lengthOfLastWord(string s) {
+    stringstream ss(s);
+    string temp;
+    while(ss>>temp) {}
+    return temp.size();
+}
+
+//Solution #2
+/*
 int lengthOfLastWord(string s) {
     int i = s.size() - 1, cnt = 0;
-    while (s[i] == ' ' && i >= 0) i--;
-    while (s[i] != ' ' && i >= 0) { i--; cnt++; }
+    while (i >= 0 && s[i] == ' ') { i--; }
+    while (i >= 0 && s[i] != ' ') { i--; cnt++; }
     return cnt;
 }
+*/
 
 //compile with "g++ -std=c++11 LengthLastWord.cpp"
 int main() {
