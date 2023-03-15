@@ -1,2 +1,2 @@
-# competitive-programming
+# leetcode
  A library of my programming solutions.
